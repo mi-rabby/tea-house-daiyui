@@ -14,6 +14,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <html data-theme="cupcake"></html>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'gradient-start': '#ff8938',
+              'gradient-end': '#f00',
+            }
+          }
+        }
+      }
+    </script>
 
     <style>
         .font-manrope{
@@ -24,8 +36,8 @@
 </head>
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero ">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class=" my-24">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
              
               <div>
                 <h1 class="lg:text-7xl text-4xl font-extrabold">It's good  <br>
@@ -34,12 +46,12 @@
                 <p class="py-6">
                     Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                 </p>
-                <button class="btn btn-primary">Explore More</button>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end rounded-xl text-white">Explore More <i class="fa-solid fa-arrow-trend-up"></i></button>
               </div>
              <div>
                 <img
                 src="/images/banner.png"
-                class="max-w-sm " />
+                class="" />
                 <!-- ratings batch -->
                 <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white rounded-xl p-5 w-60">
                     <i class="fa-solid fa-star text-3xl text-amber-400 "></i>
@@ -155,12 +167,12 @@
          </section>
          <!-- Super Client Section -->
 
-      <section class="mt-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-r from-[#ff8938] to-[#f00] px-16 py-24">
+      <section class="mt-24 rounded-xl flex flex-col lg:flex-row gap-12 bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
         <div class="flex items-center lg:pr-28 mr-10">
          <div class="space-y-5">
           <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
           <p class="text-white">There are many variations of passages of Lorem Ipsumavailable, but the majority have suffered alteration in some  form, by injected humour, or randomised words which don't look even slightly believable.   </p>
-          <button class="btn btn-primary">Show All</button>
+          <button class="btn bg-white rounded-xl text-[#ff8938]">Show All</button>
          </div>
          </div>
          <!-- review container -->
@@ -203,10 +215,116 @@
            </div>
       </div>
       </section>
+
+      <!--News and event  -->
+      <section class="mt-24">
+        <div class="text-center">
+          <h2 class="text-5xl font-extrabold text-[#1c1c1c]">News & Events</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-5 ">
+         <!-- First News -->
+         <div class="card bg-base-100  shadow-xl p-5 border-2 border-[#d2d2d2] mt-12">
+          <figure>
+            <img
+              src="/images/news-1.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-2 mt-4">
+            <p>Feb 05, 2027</p>
+            <h2 class="card-title">Collecting 8 points for <br> discount</h2>
+            <p>There are many variations of passages of Lorem Ipsum available.</p>
+            <p class=" text-xl font-bold">Learn More</p>
+            
+          </div>
+        </div>
+      <!-- Second News -->
+        <div class="card bg-base-100  shadow-xl p-5 border-2 border-[#d2d2d2] mt-12">
+          <figure>
+            <img
+              src="/images/news-2.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-2 mt-4">
+            <p>Feb 05, 2027</p>
+            <h2 class="card-title">Collecting 8 points for <br> discount</h2>
+            <p>There are many variations of passages of Lorem Ipsum available.</p>
+            <p class=" text-xl font-bold">Learn More</p>
+            
+          </div>
+        </div>
+      <!-- Third News -->
+        <div class="card bg-base-100 shadow-xl p-5 border-2 border-[#d2d2d2] mt-12">
+          <figure>
+            <img class=""
+              src="/images/news-3.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body space-y-2 mt-4">
+            <p>Feb 05, 2027</p>
+            <h2 class="card-title">Collecting 8 points for <br> discount</h2>
+            <p>There are many variations of passages of Lorem Ipsum available.</p>
+            <p class=" text-xl font-bold">Learn More</p>
+            
+          </div>
+        </div>
+       </div>
+       
+      </section>
     </main>
 
-    <footer>
-
+    <footer class="bg-gradient-to-r from-red-100 to-amber-50 text-base-content  px-4 lg:px-48 py-10 mt-32">
+      <div class="flex justify-between my-24">
+        <img src="images/cup.png" alt="">
+        <p>
+          <span>Ready to get strated?</span>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end rounded-xl " >Get Started</button>
+        </p>
+        
+      </div>
+    <div class="footer">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Newsletter</h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="join">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="py-4 bg-transparent border-b-2 border-black outline-none" />
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white"><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+     
+        <div class="mt-10 text-center">
+          <p>© 2027 UIDesign.to - All rights reserved.</p>
+        </div>
+      
     </footer>
+
 </body>
 </html>
